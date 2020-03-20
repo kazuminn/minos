@@ -34,6 +34,7 @@ EfiMain (
     IN EFI_SYSTEM_TABLE *SystemTable
     )
 {
+    (void) ImageHandle;
     SystemTable->ConOut->OutputString(SystemTable->ConOut, L"Hello World!\n");
     while(1);
     return EFI_SUCCESS;
